@@ -1,0 +1,7 @@
+footer{
+    background-color: #0d0d1a; /* Dark background color */
+    color: white; /* White text color */
+    padding: 20px; /* Padding around the footer */
+    text-align: center; /* Centered text */
+    position: relative; /* Position relative for absolute positioning of child elements */
+}

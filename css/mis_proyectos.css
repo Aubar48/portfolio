@@ -1,0 +1,50 @@
+.proyectos {
+  padding: 4rem 2rem;
+  background-color: #0d0d1a;
+  color: #ffffff;
+  text-align: center;
+}
+
+.proyectos h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #a259ff;
+}
+
+.proyectos-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.proyecto {
+  background-color: #1a1a2e;
+  padding: 1.5rem;
+  border: 1px solid #a259ff;
+  border-radius: 8px;
+  border-left: 100px solid #a259ff; /* Línea izquierda */
+}
+
+.proyecto a {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.proyecto img {
+  width: 100%;         /* Ocupa todo el ancho del contenedor */
+  height: 200px;       /* Alto fijo */
+  object-fit: cover;   /* Recorta la imagen sin deformarla */
+  border-radius: 8px;
+}
+
+.enlaces a {
+  color: #a259ff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.enlaces a:hover {
+  text-decoration: underline;
+}

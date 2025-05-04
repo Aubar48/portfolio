@@ -1,0 +1,49 @@
+/* Estilos para el interruptor */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0d0d1a;
+    border-radius: 20px;
+    transition: background-color 0.4s ease;
+  }
+  
+  .slider::before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 12px;
+    bottom: 4px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: transform 0.4s ease;
+  }
+  
+  input:checked + .slider {
+    background-color: #2e86fd;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 10px #4E4061;
+  }
+  
+  input:checked + .slider::before {
+    transform: translateX(8px);
+  }

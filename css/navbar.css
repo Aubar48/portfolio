@@ -1,0 +1,88 @@
+/* --- Navbar Base --- */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0d0d1a;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center; /* Centra el contenido (el menú de items) */
+  align-items: center;
+}
+
+.menu-list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center; /* Centra los ítems del menú */
+  align-items: center;
+  flex-grow: 1; /* Para que ocupe todo el espacio disponible */
+}
+
+.menu-list li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu-list li a:hover {
+  color: #a259ff;
+}
+
+/* --- Botón hamburguesa --- */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  left: 20px; /* Mantiene el botón en la esquina izquierda */
+  top: 50%; 
+  transform: translateY(-50%);
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu-list {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: #1a1a2e;
+    padding: 1rem;
+    border-radius: 10px;
+    gap: 1rem;
+    min-width: 180px;
+    z-index: 1001;
+
+    /* Transición inicial */
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .menu-list.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .menu-list li a {
+    color: #fff;
+  }
+}
