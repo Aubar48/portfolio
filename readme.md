@@ -46,3 +46,5 @@ Este proyecto puede ejecutarse de forma local fácilmente:
 
 📧 Contacto: [LinkedIn](https://www.linkedin.com/in/aubar48/)  
 🌍 Ubicación: Córdoba, Argentina
+💼 Portfolio: [netlify](https://taupe-mandazi-46506c.netlify.app/)  
+
