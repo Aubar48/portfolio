@@ -24,7 +24,7 @@
   padding: 1.5rem;
   border: 1px solid #a259ff;
   border-radius: 8px;
-  border-left: 100px solid #a259ff; /* Línea izquierda */
+  border-left: 100px solid #a259ff; 
 }
 
 .proyecto a {
@@ -33,9 +33,9 @@
 }
 
 .proyecto img {
-  width: 100%;         /* Ocupa todo el ancho del contenedor */
-  height: 200px;       /* Alto fijo */
-  object-fit: cover;   /* Recorta la imagen sin deformarla */
+  width: 100%;         
+  height: 200px;       
+  object-fit: cover;   
   border-radius: 8px;
 }
 

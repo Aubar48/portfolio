@@ -21,6 +21,7 @@
 }
 
 
+
 body {
   font-family: "Rubik", sans-serif;
 }
@@ -38,6 +39,7 @@ body.noche footer {
 
 body.noche .educacion,
 body.noche .proyectos,
+body.noche .modal-content-cv,
 body.noche .presentacion {
   background-color: #181818; /* Fondo oscuro para las secciones */
   color: #e0e0e0; /* Texto claro */
@@ -130,36 +132,40 @@ footer {
 }
 
 .presentacion {
-  background-color: #ffffff; /* Fondo blanco para la sección de presentación */
-  color: #333333; /* Texto oscuro para la presentación */
+  background-color: #ffffff; 
+  color: #333333; 
 }
 
 .educacion {
-  background-color: #f9f9f9; /* Fondo gris claro para educación */
-  color: #333333; /* Texto oscuro en la sección de educación */
+  background-color: #f9f9f9; 
+  color: #333333; 
 }
 
 .proyectos {
-  background-color: #f9f9f9; /* Fondo gris claro para proyectos */
-  color: #333333; /* Texto oscuro en la sección de proyectos */
+  background-color: #f9f9f9; 
+  color: #333333; 
+
+}
+.modal-content-cv{
+  background-color: #f9f9f9; 
 
 }
 
 .proyecto {
-  background-color: #ffffff; /* Fondo blanco para cada proyecto */
-  border: 1px solid #ddd; /* Borde gris claro */
-  border-left: 5px solid #a259ff; /* Resaltado morado */
+  background-color: #ffffff; 
+  border: 1px solid #ddd; 
+  border-left: 5px solid #a259ff; 
 
 }
 
 .proyecto a {
-  color: #333333; /* Color de texto oscuro en los enlaces de los proyectos */
+  color: #333333; 
 }
 
 .enlaces a {
-  color: #333333; /* Enlaces con color oscuro */
+  color: #333333; 
 }
 
 .enlaces a:hover {
-  color: #a259ff; /* Color de los enlaces al pasar el ratón */
+  color: #a259ff; 
 }

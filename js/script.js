@@ -1,3 +1,4 @@
+// burger menu
 function toggleMenu() {
     const menuList = document.getElementById('menu-list');
     const icon = document.getElementById('menu-icon');
@@ -89,7 +90,7 @@ setInterval(() => {
     }, 500); // Espera a que termine el fade out
 }, 3000);
 
-
+// modal imagen
 function mostrarImagen(src) {
     const modal = document.getElementById("modal-img");
     const imgGrande = document.getElementById("img-grande");
@@ -111,3 +112,58 @@ document.addEventListener('click', () => {
         });
     }
 }, { once: true }); // solo la primera vez
+
+//modal CV
+
+document.querySelector('.ver-cv').addEventListener('click', function (e) {
+    e.preventDefault();
+    document.getElementById('modal-cv').style.display = 'block';
+});
+
+function cerrarModalCV() {
+    document.getElementById('modal-cv').style.display = 'none';
+}
+
+// json exporstacion
+
+document.addEventListener("DOMContentLoaded", function () {
+    fetch("../data/data.json")
+        .then(res => res.json())
+        .then(data => {
+            renderEducacion(data.educacion);
+            renderProyectos(data.proyectos);
+        });
+
+    function renderEducacion(educacionData) {
+        const contenedor = document.querySelector(".educacion-contenedor");
+        contenedor.innerHTML = ""; // Limpiar antes de agregar
+        educacionData.forEach(item => {
+            contenedor.innerHTML += `
+          <div class="educacion-item">
+            <img src="${item.img}" alt="${item.alt}" onclick="mostrarImagen(this.src)">
+            <h3>${item.titulo}</h3>
+            <p>${item.descripcion}</p>
+          </div>
+        `;
+        });
+    }
+
+    function renderProyectos(proyectosData) {
+        const grid = document.querySelector(".proyectos-grid");
+        grid.innerHTML = ""; // Limpiar antes de agregar
+        proyectosData.forEach(proyecto => {
+            grid.innerHTML += `
+          <div class="proyecto">
+            <a href="${proyecto.github}" target="_blank">
+              <img src="${proyecto.img}" alt="${proyecto.alt}">
+            </a>
+            <h3>${proyecto.titulo}</h3>
+            <p>${proyecto.descripcion}</p>
+            <div class="enlaces">
+              ${proyecto.web ? `<a href="${proyecto.web}" target="_blank">Ver en Web</a>` : ""}
+            </div>
+          </div>
+        `;
+        });
+    }
+});

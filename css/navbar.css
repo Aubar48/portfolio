@@ -9,7 +9,7 @@
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   display: flex;
-  justify-content: center; /* Centra el contenido (el menú de items) */
+  justify-content: center; 
   align-items: center;
 }
 
@@ -19,9 +19,9 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  justify-content: center; /* Centra los ítems del menú */
+  justify-content: center; 
   align-items: center;
-  flex-grow: 1; /* Para que ocupe todo el espacio disponible */
+  flex-grow: 1; 
 }
 
 .menu-list li a {
@@ -44,7 +44,7 @@
   cursor: pointer;
   color: white;
   position: absolute;
-  left: 20px; /* Mantiene el botón en la esquina izquierda */
+  left: 20px; 
   top: 50%; 
   transform: translateY(-50%);
 }

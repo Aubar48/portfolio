@@ -57,50 +57,24 @@
       <div class="redes">
         <a href="https://www.linkedin.com/in/aubar48/" target="_blank"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/Aubar48" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="../assets/Curriculum Vitae Nahuel Argandoña.pdf" download class="btn-cv">📄 Descargar CV</a>
         <a href="https://www.canva.com/design/DAFoP4HTDqk/YW9Jg6z0ouwf7GeaChLSvg/view?utm_content=DAFoP4HTDqk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he143a9d067"
           target="_blank" class="btn-cv ver-cv">🔎 Ver CV Online</a>
 
       </div>
     </div>
-  </section>
+    <div id="modal-cv" class="modal-cv">
+      <div class="modal-content-cv">
+        <span class="close-cv" onclick="cerrarModalCV()">&times;</span>
+        <iframe src="./assets/Curriculum Vitae Nahuel Argandoña.pdf#zoom=100" frameborder="0"></iframe>
+      </div>
+    </div>
 
+  </section>
 
   <section id="educacion" class="educacion">
     <h2>Mi Educación</h2>
-    <div class="educacion-contenedor">
-      <div class="educacion-item">
-        <img src="../assets/estudios/ISPC.png" alt="Tecnicatura en Desarrollo de Software"
-          onclick="mostrarImagen(this.src)">
-        <h3>Tecnicatura en Desarrollo de Software</h3>
-        <p>Instituto Superior Politecnico de Córdoba - 2024 a la actualidad</p>
-      </div>
-      <div class="educacion-item">
-        <img src="../assets/estudios/Qa_manual.png" alt="Curso de Testing QA Manual" onclick="mostrarImagen(this.src)">
-        <h3>Curso de Testing QA Manual</h3>
-        <p>xAcademy Technology with Purpose Foundation - 2024</p>
-      </div>
-      <div class="educacion-item">
-        <img src="../assets/estudios/Qa_automatizacion.png" alt="Curso de Testing QA Automatización"
-          onclick="mostrarImagen(this.src)">
-        <h3>Curso de Testing QA Automatización with Cypress</h3>
-        <p>xAcademy Technology with Purpose Foundation - 2024</p>
-      </div>
-      <div class="educacion-item">
-        <img src="../assets/estudios/dev.png" alt="Curso de Dev" onclick="mostrarImagen(this.src)">
-        <h3>Desarrollador Web full stack with javascript && Angular</h3>
-        <p>xAcademy && Technology with Purpose Foundation - 2024</p>
-      </div>
-      <div class="educacion-item">
-        <img src="../assets/estudios/dev_dg.png" alt="Desarrollador Web full stack" onclick="mostrarImagen(this.src)">
-        <h3>Desarrollador Web full stack with Javascript && React</h3>
-        <p>Fundación Formar && Digital House - 2023</p>
-      </div>
-      <div class="educacion-item">
-        <img src="../assets/estudios/EGG.png" alt="Desarrollador Web full stack" onclick="mostrarImagen(this.src)">
-        <h3>Desarrollador Web full stack with Java</h3>
-        <p>Egg Education - 2022</p>
-      </div>
+    <div class="educacion-contenedor" id="educacion-contenedor">
+      <!-- Los elementos de educación se generarán aquí automáticamente -->
     </div>
   </section>
 
@@ -110,43 +84,12 @@
     <img class="modal-contenido" id="img-grande">
   </div>
 
-
-
   <section id="proyectos" class="proyectos">
     <h2>Mis Proyectos</h2>
-    <div class="proyectos-grid">
-      <div class="proyecto">
-        <a href="https://github.com/Aubar48/Huggins" target="_blank">
-          <img src="https://github.com/Aubar48/Huggins/blob/master/public/images/lcrCrows.png?raw=true"
-            alt="Huggin Web">
-        </a>
-        <h3>Huggin Web</h3>
-        <p>Un sitio web responsive hecho con HTML, CSS y JavaScript.</p>
-        <div class="enlaces">
-          <a href="https://latincrowshuginn.netlify.app/" target="_blank">Ver en Web</a>
-        </div>
-      </div>
-      <div class="proyecto">
-        <a href="https://github.com/Aubar48/angular_list_pokemon" target="_blank">
-          <img src="../assets/proyectos/pokemon.png" alt="App pokemon ">
-        </a>
-        <h3>App Pokemon list</h3>
-        <p>Una aplicación para gestionar la lista de pokemones.</p>
-        <div class="enlaces">
-          <a href="https://allpokemoncard48.netlify.app/" target="_blank">Ver en Web</a>
-        </div>
-      </div>
-      <div class="proyecto">
-        <a href="https://github.com/Aubar48/Argando-aChallengeQaAutomatizacion?tab=readme-ov-file" target="_blank">
-          <img src="https://github.com/Aubar48/Argando-aChallengeQaAutomatizacion/blob/master/cypress.png?raw=true"
-            alt="Proyecto QA Testing">
-        </a>
-        <h3>Proyecto QA Testing</h3>
-        <p>Documentación, ejecución de pruebas y reporte de bugs de una aplicación web real.</p>
-      </div>
+    <div class="proyectos-grid" id="proyectos-grid">
+      <!-- Los proyectos se generarán aquí automáticamente -->
     </div>
   </section>
-
 
   <footer>
     <p id="datetime"></p>
@@ -156,10 +99,10 @@
       <a href="https://github.com/Aubar48"><i class="fab fa-github"></i></a>
     </div>
   </footer>
+
   <audio id="musica-fondo" controls autoplay loop>
     <source src="../assets/Noche de Cuervos.mp3">
   </audio>
-
   <script src="../js/script.js"></script>
 
 </body>
