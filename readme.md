@@ -41,10 +41,10 @@ Este proyecto puede ejecutarse de forma local fácilmente:
 
 ## 📄 CV y contacto
 
-📥 [Descargar CV](./assets/Curriculum%20Vitae%20Nahuel%20Argandoña.pdf)  
-🔎 [Ver CV Online](https://www.canva.com/design/DAFoP4HTDqk/YW9Jg6z0ouwf7GeaChLSvg/view?utm_content=DAFoP4HTDqk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he143a9d067)  
+- 📥 [Descargar CV](./assets/Curriculum%20Vitae%20Nahuel%20Argandoña.pdf)  
+- 🔎 [Ver CV Online](https://www.canva.com/design/DAFoP4HTDqk/YW9Jg6z0ouwf7GeaChLSvg/view?utm_content=DAFoP4HTDqk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he143a9d067)  
 
-📧 Contacto: [LinkedIn](https://www.linkedin.com/in/aubar48/)  
-🌍 Ubicación: Córdoba, Argentina
-💼 Portfolio: [netlify](https://taupe-mandazi-46506c.netlify.app/)  
+- 📧 Contacto: [LinkedIn](https://www.linkedin.com/in/aubar48/)  
+- 🌍 Ubicación: Córdoba, Argentina
+- 💼 Portfolio: [netlify](https://taupe-mandazi-46506c.netlify.app/)  
 
