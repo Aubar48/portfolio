@@ -127,7 +127,7 @@ function cerrarModalCV() {
 // json exporstacion
 
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("../data/data.json")
+    fetch("./data/data.json")
         .then(res => res.json())
         .then(data => {
             renderEducacion(data.educacion);

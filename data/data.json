@@ -1,25 +1,19 @@
 {
     "educacion": [
       {
-        "img": "../assets/estudios/ISPC.png",
-        "alt": "Tecnicatura en Desarrollo de Software",
-        "titulo": "Tecnicatura en Desarrollo de Software",
-        "descripcion": "Instituto Superior Politecnico de Córdoba - 2024 a la actualidad"
-      },
-      {
-        "img": "../assets/estudios/Qa_manual.png",
+        "img": "./assets/estudios/Qa_manual.png",
         "alt": "Curso de Testing QA Manual",
         "titulo": "Curso de Testing QA Manual",
         "descripcion": "xAcademy Technology with Purpose Foundation - 2024"
       },
       {
-        "img": "../assets/estudios/Qa_automatizacion.png",
+        "img": "./assets/estudios/Qa_automatizacion.png",
         "alt": "Curso de Testing QA Automation",
         "titulo": "Curso de Testing QA Automation with Cypress", 
         "descripcion": "xAcademy Technology with Purpose Foundation - 2024"
       },
       {
-        "img": "../assets/estudios/dev.png",
+        "img": "./assets/estudios/dev.png",
         "alt": "Curso de dev",
         "titulo": "Curso de dev",
         "descripcion": "xAcademy Technology with Purpose Foundation - 2024"
@@ -35,7 +29,7 @@
         "web": "https://latincrowshuginn.netlify.app/"
       },
       {
-        "img": "../assets/proyectos/pokemon.png",
+        "img": "./assets/proyectos/pokemon.png",
         "alt": "App Pokemon",
         "titulo": "App Pokemon list",
         "descripcion": "Una aplicación para gestionar la lista de pokemones.",
