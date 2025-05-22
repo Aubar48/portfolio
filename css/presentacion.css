@@ -5,23 +5,27 @@
   padding: 3rem;
   background-color: #0d0d1a;
   color: #fff;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding-top: 5rem;
+  gap: 10rem;
+  overflow: hidden;
 }
 
 .foto img {
   width: 250px;
   height: auto;
-  border-radius: 50%;
+  border-radius: 2%;
   border: 4px solid #a259ff;
   box-shadow: 0 0 15px #a259ff;
   transition: opacity 0.5s ease-in-out;
   opacity: 1;
+  overflow: hidden;
+  object-fit: cover;
 }
 
 .info {
   max-width: 600px;
-  margin-left: 2rem;
+  overflow: hidden;
 }
 
 .info h1 {
@@ -118,16 +122,19 @@
 .close-cv:hover {
   color: black;
 }
-@media (max-width: 425px) {
+@media (max-width: 1025px) {
   .modal-content-cv {
     width: 100%;
     min-height: 60vh;
     height: auto;
     margin: 10% auto;
   }
+  .presentacion {
+    flex-direction: column-reverse;
+    gap: 1rem;
+    margin-top: 10rem;
+  }
 }
-
-
 
 @media (min-width: 768px) {
   .presentacion {

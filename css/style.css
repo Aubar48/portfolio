@@ -6,7 +6,7 @@
 @import "./mi_educacion.css";
 @import "./mis_proyectos.css";
 @import "./footer.css";
-
+@import "./carrousel.css";
 .wrapper {
   width: auto;
   margin-left: auto;
@@ -20,15 +20,13 @@
   z-index: 1000;
 }
 
-
-
 body {
   font-family: "Rubik", sans-serif;
 }
 
 /* Estilos comunes para el modo oscuro */
 body.noche {
-  background-color: #121212; /* Fondo oscuro para el cuerpo */
+  background-color: #181818; /* Fondo oscuro para las secciones */
   color: #e0e0e0; /* Texto claro */
 }
 
@@ -49,7 +47,9 @@ body.noche .educacion h2,
 body.noche .proyectos h2 {
   color: #a259ff; /* Color de los títulos */
 }
-
+,
+body.noche .carrousel {
+}
 body.noche .educacion-item,
 body.noche .proyecto {
   background-color: #2e2e3d; /* Fondo más oscuro para los ítems */
@@ -87,6 +87,13 @@ body.noche .enlaces a:hover {
   text-decoration: underline; /* Subrayado al pasar el ratón */
 }
 
+.fas{
+  color:#181818
+}
+body.noche .fas{
+  color: white;
+}
+
 /* Navbar en el modo oscuro */
 body.noche .navbar {
   background-color: #1a1a2e; /* Fondo más oscuro del navbar */
@@ -100,7 +107,7 @@ body.noche .menu-list.active {
 
 body.noche .fa-linkedin,
 body.noche .fa-github {
-  color: #f1f1f1; 
+  color: #f1f1f1;
 }
 /* Modo Día (por defecto) */
 body {
@@ -132,40 +139,72 @@ footer {
 }
 
 .presentacion {
-  background-color: #ffffff; 
-  color: #333333; 
+  background-color: #ffffff;
+  color: #333333;
 }
 
 .educacion {
-  background-color: #f9f9f9; 
-  color: #333333; 
+  background-color: #f9f9f9;
+  color: #333333;
 }
 
 .proyectos {
-  background-color: #f9f9f9; 
-  color: #333333; 
-
+  background-color: #f9f9f9;
+  color: #333333;
 }
-.modal-content-cv{
-  background-color: #f9f9f9; 
-
+.modal-content-cv {
+  background-color: #f9f9f9;
 }
 
 .proyecto {
-  background-color: #ffffff; 
-  border: 1px solid #ddd; 
-  border-left: 5px solid #a259ff; 
-
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-left: 5px solid #a259ff;
 }
 
 .proyecto a {
-  color: #333333; 
+  color: #333333;
 }
 
 .enlaces a {
-  color: #333333; 
+  color: #333333;
 }
 
 .enlaces a:hover {
-  color: #a259ff; 
+  color: #a259ff;
+}
+
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  display: none;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+
+
+.whatsapp-navbar {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+.wsp-img{
+  height: 24px
+}
+
+.whatsapp-navbar:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }

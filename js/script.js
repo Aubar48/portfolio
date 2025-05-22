@@ -74,7 +74,8 @@ changeTitleIfHome();
 // Cambiar la imagen cada 2 segundos
 const imagenes = [
     "https://i.postimg.cc/C56tm6Gr/0fd2c8e9-0370-490c-81e7-8e0845bb6c85-isnet-general-use.png",
-    "https://media-eze1-1.cdn.whatsapp.net/v/t61.24694-24/462983808_823871012997824_3207676274210132791_n.jpg?ccb=11-4&oh=01_Q5Aa1QHo1_pzDAAPNV9sG2q3HHeJc5Xjhl9GC-0DMGkrDkdnYA&oe=6823E04F&_nc_sid=5e03e0&_nc_cat=107"
+    "assets/yo.jpg",
+
 ];
 
 let indice = 0;
@@ -167,3 +168,57 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+
+// Carrusel de imágenes
+
+const slides = document.querySelectorAll('.carousel-slide');
+const nextBtn = document.querySelector('.carousel-btn.next');
+const prevBtn = document.querySelector('.carousel-btn.prev');
+let currentIndex = 0;
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+    });
+}
+
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+}
+
+function prevSlide() {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(currentIndex);
+}
+
+nextBtn.addEventListener('click', nextSlide);
+prevBtn.addEventListener('click', prevSlide);
+
+// Mostrar primer slide al cargar
+showSlide(currentIndex);
+
+// Iniciar auto-slide cada 4 segundos
+setInterval(nextSlide, 4000);
+
+
+
+
+// Scroll suave
+
+const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+window.onscroll = function() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    scrollTopBtn.style.display = "block";
+  } else {
+    scrollTopBtn.style.display = "none";
+  }
+};
+
+scrollTopBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+

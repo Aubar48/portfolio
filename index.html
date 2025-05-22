@@ -15,6 +15,9 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/icon/favicon-16x16.png">
   <link rel="manifest" href="/assets/icon/site.webmanifest">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-HASH-AQUÍ" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </head>
 
@@ -38,14 +41,35 @@
         <li><a href="#presentacion">Inicio</a></li>
         <li><a href="#educacion">Mi Educación</a></li>
         <li><a href="#proyectos">Mis Proyectos</a></li>
+        <li><a href="https://wa.me/3517587047" target="_blank" class="whatsapp-navbar">
+            <img class="wsp-img" src="./assets/icon/icons8-whatsapp.svg" alt="WhatsApp">
+          </a></li>
       </ul>
+
+
     </nav>
   </header>
 
-  <section class="presentacion" id="presentacion">
-    <div class="foto">
-      <img src="https://i.postimg.cc/C56tm6Gr/0fd2c8e9-0370-490c-81e7-8e0845bb6c85-isnet-general-use.png" alt="nahuel">
+  <section class="carrousel">
+    <div class="simple-carousel">
+      <div class="carousel-slide active">
+        <img src="./assets/ispc.png" alt="Imagen 1">
+        <div class="carousel-text">Texto para la imagen 1</div>
+      </div>
+      <div class="carousel-slide">
+        <img src="./assets/ispc2.png" alt="Imagen 2">
+        <div class="carousel-text">Texto para la imagen 2</div>
+      </div>
+
+      <button class="carousel-btn prev">&#10094;</button>
+      <button class="carousel-btn next">&#10095;</button>
     </div>
+  </section>
+
+
+
+  <section class="presentacion" id="presentacion">
+
     <div class="info">
       <h1>¡Hi! 👋</h1>
       <h2>I'm <span>Nahuel Argandoña</span></h2>
@@ -61,6 +85,10 @@
           target="_blank" class="btn-cv ver-cv">🔎 Ver CV Online</a>
 
       </div>
+
+    </div>
+    <div class="foto">
+      <img src="https://i.postimg.cc/C56tm6Gr/0fd2c8e9-0370-490c-81e7-8e0845bb6c85-isnet-general-use.png" alt="nahuel">
     </div>
     <div id="modal-cv" class="modal-cv">
       <div class="modal-content-cv">
@@ -100,10 +128,18 @@
     </div>
   </footer>
 
+  <button type="submit" id="scrollTopBtn" class="px-4 py-2 rounded-r-lg hover:bg-indigo-700">
+    <i class="fas fa-paper-plane"></i>
+  </button>
+
+
   <audio id="musica-fondo" controls autoplay loop>
     <source src="./assets/Noche de Cuervos.mp3">
   </audio>
   <script src="./js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 
 </body>
 
