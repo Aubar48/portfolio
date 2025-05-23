@@ -9,15 +9,16 @@
 - CSS3  
 - JavaScript (puro)  
 - DockerFile
+- React / Angular  
 
 > Próximamente:  
-- React / Angular  
 - Node.js + Express  
 - MySQL
 
 ## 📸 Vista previa
 
 ![Captura del Portfolio](./assets/portfolio.jpg)  
+![Captura del Portfolio con angular && bootstrap](./assets/new-desing.png)  
 
 ## 🔧 Cómo ejecutar el proyecto
 
